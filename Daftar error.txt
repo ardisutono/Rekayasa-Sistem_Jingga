@@ -1,0 +1,25 @@
+Error:
+1. Android version is not supported
+   2 library yang sudah out of date: 
+	import android.support.v7.app.AlertDialog;
+	import android.support.v7.app.AppCompatActivity;
+   diganti ke 
+	import androidx.appcompat.app.AlertDialog;
+	import androidx.appcompat.app.AppCompatActivity;
+
+2. Activity not found exception
+   error in debug console: 
+		android.content.ActivityNotFoundException: Unable to find explicit activity class 	   {com.example.mycrud/com.example.mycrud.TampilSemuaPgw}; have you declared this activity in your AndroidManifest.xml?
+   penyelesaian:
+		Declare semua activity di AndroidManifest.xml:
+		<activity android:name=".TampilSemuaPgw"></activity>
+        	<activity android:name=".TampilPegawai"></activity>
+        	<activity android:name=".ListView"></activity>
+
+3. Konfigurasi IP ke ipv4 lokal
+
+Anggota Kelompok
+Melsen (1831046)
+Denissa (1831081)
+Jassy Lee (1831102)
+Ardy Sutono (1831122)
